@@ -2,6 +2,8 @@
 
 Protect any MCP server with [`@bolyra/gateway`](https://www.npmjs.com/package/@bolyra/gateway) in under 2 minutes. Zero auth code in your server.
 
+![demo](demo.gif)
+
 ## What this does
 
 ```
