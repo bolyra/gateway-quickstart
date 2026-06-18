@@ -1,0 +1,18 @@
+# Bolyra Gateway config
+# Docs: https://github.com/bolyra/bolyra/tree/main/integrations/gateway
+
+target: http://localhost:3000/mcp
+port: 4100
+devMode: true
+
+# Per-tool permission policy (cumulative bitmask)
+# 0 = READ_DATA, 1 = WRITE_DATA, 2 = FINANCIAL_SMALL, etc.
+# See: https://bolyra.ai/#architecture
+toolPolicy:
+  list_files: 1    # READ_DATA
+  read_file: 1     # READ_DATA
+  write_file: 2    # WRITE_DATA
+
+# Receipts: every auth decision gets a signed record
+receipts:
+  file: ./receipts/
